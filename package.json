@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "index.html",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "compress:css":"node-sass css/style.comp.css css/style.css --output-style compressed",
+    "build:css":"npm-run-all --parallel compile:css compress:css"
+   
+  },
+  "keywords": [
+    "Samip",
+    "Lamsal"
+  ],
+  "author": "Samip Lamsal",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
