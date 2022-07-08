@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%;
+  @include respond(tab-land) {
+    font-size: 56.25%; //9/16 = 56.25     width<1200?
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //8/16 =50%           <width <900?
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //  12/16 =                with >1800
+  }
+}
+
+body {
+  box-sizing: border-box;
+}

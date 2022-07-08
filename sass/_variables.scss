@@ -1,0 +1,77 @@
+//Media Query Manager
+/*
+0-600px:      Phone
+600-900:      Tablet Portrait
+900-1200:    Tablet Landscape
+[1200-1800]:  normal
+1800 + :      Big Desktop\
+
+*/
+
+// Breakpoint choices
+/*
+
+-phone
+-tab-port
+-tab-land
+-big- dekstop
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      // 600/16 = 37.5
+      @content;
+    }
+  }
+  @if $breakpoint == xsmall {
+    @media (max-width: 23.125em) {
+      // 600/16 = 37.5
+      @content;
+    }
+  }
+  @if $breakpoint == reverse {
+    @media (max-width: 43.75em) {
+      // 600/16 = 37.5
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      //900/16=56.25em
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      //  1200/16 = 75
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      //1800/16 = 112.5
+      @content;
+    }
+  }
+}
+/// FONTS
+
+@font-face {
+  font-family: "Museo900";
+  src: url("../fonts/museosans_900-webfont.woff2") format("woff2"),
+    url("../fonts/museosans_900-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo100";
+  src: url("../fonts/museosans-100-webfont.woff2") format("woff2"),
+    url("../fonts/museosans-100-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

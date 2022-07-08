@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  height: 100vh;
+  @include respond(reverse) {
+    flex-direction: column;
+    height: auto;
+  }
+
+  &__intro {
+    flex-basis: 41%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    //padding: 9% 7%;
+    padding: 0 7%;
+    @include respond(reverse) {
+      flex: 0 0 90vh;
+      padding: 0 9%;
+      justify-content: center;
+    }
+    @include respond(xsmall) {
+      flex: 0 0 100vh;
+    }
+  }
+
+  &__works {
+    flex: 1;
+    overflow-y: auto;
+    @include respond(reverse) {
+      overflow-y: visible;
+    }
+    //background-color: #4a4a4a;
+
+    display: flex;
+    &-div {
+      height: 100vh;
+      @include respond(reverse) {
+        height: auto;
+      }
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    &--1 {
+      background-image: linear-gradient(180deg, #005ba9, #005ba9);
+      padding: 5rem;
+    }
+    &--2 {
+      //background-image: linear-gradient(180deg, #54e7c7, #54e7c7);
+      background-color: #d83a56;
+      padding: 5rem;
+    }
+    &--3 {
+      background-color: #4a4a4a;
+      padding: 5rem;
+    }
+    &--4 {
+      display: flex;
+      flex-direction: column;
+
+      background-color: #f4f3f3;
+
+      padding: 5rem;
+    }
+  }
+}

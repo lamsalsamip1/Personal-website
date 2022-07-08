@@ -1,0 +1,200 @@
+.header {
+  &__intro {
+    &--heading {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      font-family: "Museo900";
+      font-weight: 900;
+      color: #4a4a4a;
+      line-height: 5rem;
+
+      & > * {
+        display: block;
+      }
+
+      @include respond(reverse) {
+        margin-top: -5rem;
+        font-size: 4rem;
+      }
+      @include respond(xsmall) {
+        font-size: 3.5rem;
+      }
+    }
+
+    &--about {
+      margin-top: 3rem;
+      font-family: "Open Sans", sans-serif;
+      font-size: 2rem;
+      font-weight: 300;
+      @include respond(reverse) {
+        font-size: 2.7rem;
+        margin-top: 4.5rem;
+      }
+      @include respond(xsmall) {
+        margin-top: 3.4rem;
+        font-size: 2rem;
+      }
+    }
+    &__socials {
+      margin-top: 4rem;
+      @include respond(reverse) {
+        margin-top: 5rem;
+      }
+    }
+    &--links {
+      &:not(:last-child) {
+        margin-right: 3rem;
+        @include respond(reverse) {
+          margin-right: 4rem;
+        }
+      }
+    }
+    &--icons {
+      height: 2rem;
+      width: 2rem;
+      @include respond(reverse) {
+        height: 2.8rem;
+        width: 2.8rem;
+      }
+      fill: #a9a9a9;
+      //opacity: 0;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+      &:active {
+        transform: translateY(1px);
+      }
+      /*
+      &-hover {
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        margin-left: -2rem;
+        opacity: 0;
+      }
+      */
+    }
+    &__contact {
+      margin-top: 6rem;
+    }
+    &--button {
+      background-color: #3b80fe;
+      padding: 1.5rem 5rem;
+
+      color: #fff;
+      border-radius: 4rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 1.5rem;
+      @include respond(reverse) {
+        font-size: 2rem;
+      }
+      &:hover {
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+        background-color: #1660e7;
+      }
+      &:active {
+        transform: translateY(5px);
+      }
+    }
+  }
+
+  &__works {
+    display: flex;
+    flex-direction: column;
+
+    color: #fff;
+    font-family: "Museo100";
+
+    &--screenshot {
+      height: 50rem;
+      filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.5));
+      margin: 1rem 0;
+      &-yt {
+        height: 45rem;
+        margin-top: 5rem;
+
+        @include respond(reverse) {
+          height: 28rem;
+        }
+      }
+    }
+    &__youtube {
+      display: flex;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+
+      &--subs {
+        margin-right: 5rem;
+      }
+    }
+    &--topic {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+    &--num {
+      font-size: 1rem;
+      align-self: flex-start;
+      margin-bottom: 2rem;
+    }
+    &--footer {
+      &-1 {
+        align-self: flex-start;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+      &-2 {
+        align-self: flex-start;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+    &--websites {
+      align-items: flex-start;
+      font-size: 3rem;
+      font-family: "Museo900";
+      font-weight: 900;
+      color: #4a4a4a;
+      margin-bottom: 3rem;
+    }
+    &--weblink {
+      font-size: 2rem;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+      &:link,
+      &:visited {
+        color: #3b80fe;
+      }
+    }
+  }
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.u-red {
+  color: red;
+}
+.u-remove:link,
+.u-remove:visited {
+  text-decoration: none;
+  color: #fff;
+}
+.u-margin-top {
+  margin-top: -4rem;
+}
+
+.footer {
+  background-color: #222;
+  color: #a9a9a9;
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: "Museo100", "sans-serif";
+  padding: 3rem 0;
+}
