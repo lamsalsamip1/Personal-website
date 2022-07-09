@@ -2,4 +2,4 @@
 My portfolio website
 Developed using HTML and SCSS
 
-samiplamsal.netlify.app
+Deployment : https://samiplamsal.netlify.app
