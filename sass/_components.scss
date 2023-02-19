@@ -26,6 +26,7 @@
       font-family: "Open Sans", sans-serif;
       font-size: 2rem;
       font-weight: 300;
+      text-align: justify;
       @include respond(reverse) {
         font-size: 2.7rem;
         margin-top: 4.5rem;
@@ -41,6 +42,17 @@
         margin-top: 5rem;
       }
     }
+    &__footer{
+      
+      margin-top: 7rem;
+      color: #3b80fe;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5rem;
+      &:visited{
+        color: #3b80fe;
+      }
+
+    }
     &--links {
       &:not(:last-child) {
         margin-right: 3rem;
@@ -52,6 +64,10 @@
     &--icons {
       height: 2rem;
       width: 2rem;
+      &-img{
+        height: 2.5rem;
+        width: 2.5rem;
+      }
       @include respond(reverse) {
         height: 2.8rem;
         width: 2.8rem;
@@ -165,9 +181,11 @@
       &:not(:last-child) {
         margin-bottom: 2rem;
       }
-      &:link,
-      &:visited {
+      & a:link,
+      & a:visited {
+        
         color: #3b80fe;
+        font-weight: bold;
       }
     }
   }
