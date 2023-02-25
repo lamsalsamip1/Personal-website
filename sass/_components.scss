@@ -26,7 +26,12 @@
       font-family: "Open Sans", sans-serif;
       font-size: 2rem;
       font-weight: 300;
-      text-align: justify;
+    
+        & a:visited{
+          color: #3b80fe;
+        }
+  
+      
       @include respond(reverse) {
         font-size: 2.7rem;
         margin-top: 4.5rem;
