@@ -8,9 +8,8 @@
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:css": "node-sass sass/main.scss css/style.comp.css",
-    "compress:css":"node-sass css/style.comp.css css/style.css --output-style compressed",
-    "build:css":"npm-run-all --parallel compile:css compress:css"
-   
+    "compress:css": "node-sass css/style.comp.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all --parallel compile:css compress:css"
   },
   "keywords": [
     "Samip",
@@ -20,11 +19,11 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.2.6",
-    "node-sass": "^6.0.1",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^8.3.1"
   },
   "dependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "node-sass": "^9.0.0"
   }
 }
