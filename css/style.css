@@ -15,8 +15,6 @@
 
 1em = 16px
 */
-
-
 @font-face {
   font-family: "Museo900";
   src: url("../fonts/museosans_900-webfont.woff2") format("woff2"), url("../fonts/museosans_900-webfont.woff") format("woff");
@@ -67,6 +65,13 @@ body {
   @media (max-width: 23.125em) {
     .header__intro--heading {
       font-size: 3.5rem; } }
+
+.header__intro--pos {
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #d83a56;
+  margin-top: 2.5rem; }
 
 .header__intro--about {
   margin-top: 3rem;
