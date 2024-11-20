@@ -9,7 +9,8 @@
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:css": "node-sass sass/main.scss css/style.comp.css",
     "compress:css": "node-sass css/style.comp.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all --parallel compile:css compress:css"
+    "build:css": "npm-run-all --parallel compile:css compress:css",
+    "build":"npm-run-all --parallel compile:css compress:css"
   },
   "keywords": [
     "Samip",
